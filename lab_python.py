@@ -19,11 +19,3 @@ all_sports = sorted(all_sports.items(), key= lambda item: item[1], reverse = Tru
 print(all_sports)
 
 
-
-            
-
-# for lines in r:
-#     d = lines.decode('cp1251')
-#     s = d.split("\t")
-#     print(s, "\n")
-# print(d, sorted(d.split(), key = str.lower), '\n')
