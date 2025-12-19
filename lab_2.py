@@ -14,9 +14,13 @@ with open('opendata.csv', 'r', encoding='utf-8') as file:
         if '2018' in date and region == "Забайкальский край" and name == "Средняя пенсия":
             x.append(date)
             y.append(value)
+            
+full_value = sum([int(i) for i in y])/ len(y)
+print(full_value)
 
 plt.plot(x,y)
 plt.xlabel("Дата")
 plt.ylabel("Средняя пенсия")
 plt.show()
+
 
